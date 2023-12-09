@@ -1,0 +1,24 @@
+{
+  "id": "customReplyMention",
+  "version": "1.0.0",
+  "meta": {
+    "name": "Custom Reply Mention",
+    "tagline": "Allows you to customize the behavior of reply mentions",
+    "authors": ["DustyAngel47"],
+    "tags": ["chat"]
+  },
+  "settings": {
+    "shouldPing": {
+      "displayName": "Reply Pings",
+      "description": "Whether to enable or disable reply pings by default",
+      "type": "boolean",
+      "default": true
+    },
+    "shouldInvertOnShift": {
+      "displayName": "Invert on Shift",
+      "description": "Whether to invert the default behavior when holding shift",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
