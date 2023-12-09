@@ -26,19 +26,8 @@ export const webpackModules: Record<string, ExtensionWebpackModule> = {
     entrypoint: true,
     run: (module, _, __) => {
       module.exports = {
-        shouldPing: function (isShiftPressed: boolean) {
-          console.log(
-            "whar",
-            isShiftPressed,
-            defaultPing,
-            shouldInvertOnShift,
-            shouldInvertOnShift && isShiftPressed ? !defaultPing : defaultPing,
-          );
-
-          return shouldInvertOnShift && isShiftPressed
-            ? !defaultPing
-            : defaultPing;
-        },
+        shouldPing: (isShiftPressed: boolean) =>
+          shouldInvertOnShift && isShiftPressed ? !defaultPing : defaultPing,
       };
     },
   },
