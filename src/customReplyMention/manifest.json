@@ -5,6 +5,7 @@
     "name": "Custom Reply Mention",
     "tagline": "Allows you to customize the behavior of reply mentions",
     "authors": ["DustyAngel47"],
+    "source": "https://github.com/Ruthenic/moonlight-extensions",
     "tags": ["chat"]
   },
   "settings": {
