@@ -46,10 +46,14 @@ function makeConfig(ext, name) {
     name: "buildLog",
     setup(build) {
       build.onEnd(() => {
-        console.log(`[${timeFormatter.format(new Date())}] [${ext}/${name}] build finished`);
+        console.log(
+          `[${timeFormatter.format(
+            new Date()
+          )}] [${ext}/${name}] build finished`
+        );
       });
     }
-  }
+  };
 
   return {
     entryPoints,
@@ -63,14 +67,7 @@ function makeConfig(ext, name) {
     minify: prod,
     sourcemap: "inline",
 
-    external: [
-      "electron",
-      "fs",
-      "path",
-      "module",
-      "events",
-      "original-fs"
-    ],
+    external: ["electron", "fs", "path", "module", "events", "original-fs"],
 
     plugins: [
       copyStaticFiles({

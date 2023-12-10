@@ -1,0 +1,25 @@
+{
+  "id": "freeSpotify",
+  "version": "1.0.0",
+  "meta": {
+    "name": "FreeSpotify",
+    "tagline": "Bends Discord's Spotify integration to your will",
+    "authors": ["DustyAngel47"],
+    "source": "https://github.com/Ruthenic/moonlight-extensions",
+    "tags": ["qol"]
+  },
+  "settings": {
+    "disableAutoPause": {
+      "displayName": "Disable auto-pause",
+      "description": "Prevents Spotify from automatically pausing music while you're listening in a voice channel",
+      "type": "boolean",
+      "default": true
+    },
+    "premiumSpoof": {
+      "displayName": "Spoof premium",
+      "description": "Makes Discord think you have premium (unlocks listen along)",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
