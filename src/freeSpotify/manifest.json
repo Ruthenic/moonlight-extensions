@@ -8,6 +8,7 @@
     "source": "https://github.com/Ruthenic/moonlight-extensions",
     "tags": ["qol"]
   },
+  "incompatible": ["spotifySpoof"],
   "settings": {
     "disableAutoPause": {
       "displayName": "Disable auto-pause",
